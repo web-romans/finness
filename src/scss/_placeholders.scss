@@ -1,0 +1,224 @@
+%box-shadow {
+  box-shadow: 0px 64px 134px rgba(0, 0, 0, 0.1);
+}
+
+%flex {
+  display: flex;
+}
+
+%inline-flex {
+  display: inline-flex;
+}
+
+%flex-align-center {
+  align-items: center;
+}
+
+%flex-align-start {
+  align-items: flex-start;
+}
+
+%flex-align-stretch {
+  align-items: stretch;
+}
+
+%flex-align-end {
+  align-items: flex-end;
+}
+
+%flex-justify-end {
+  justify-content: flex-end;
+}
+
+%flex-justify-between {
+  justify-content: space-between;
+}
+
+%flex-justify-center {
+  justify-content: center;
+}
+
+%flex-justify-start {
+  justify-content: flex-start;
+}
+
+%flex-v-center {
+  @extend %flex;
+  @extend %flex-align-center;
+}
+
+%flex-h-center {
+  @extend %flex;
+  @extend %flex-justify-center;
+}
+
+%flex-all-center {
+  @extend %flex;
+  @extend %flex-align-center;
+  @extend %flex-justify-center;
+}
+
+%flex-all-between {
+  @extend %flex;
+  @extend %flex-align-center;
+  @extend %flex-justify-between;
+}
+
+%flex-stretch-between {
+  @extend %flex;
+  @extend %flex-align-stretch;
+  @extend %flex-justify-between;
+}
+
+%flex-center-end {
+  @extend %flex;
+  @extend %flex-align-center;
+  @extend %flex-justify-end;
+}
+
+%flex-center-start {
+  @extend %flex;
+  @extend %flex-align-center;
+  @extend %flex-justify-start;
+}
+
+%flex-center-between {
+  @extend %flex;
+  @extend %flex-align-center;
+  @extend %flex-justify-between;
+}
+
+%flex-start-between {
+  @extend %flex;
+  @extend %flex-align-start;
+  @extend %flex-justify-between;
+}
+
+%flex-start-center {
+  @extend %flex;
+  @extend %flex-align-start;
+  @extend %flex-justify-center;
+}
+
+%flex-column {
+  flex-direction: column;
+}
+
+%flex-row {
+  flex-direction: row;
+}
+
+%flex-wrap {
+  flex-wrap: wrap;
+}
+
+%flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+%transition {
+  transition: all 0.1s ease-in-out 0s;
+}
+
+%transition-c {
+  transition: color 0.2s ease-in-out 0s;
+}
+
+%transition-o {
+  transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+%transition-t {
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+
+%transition-t-o {
+  transition: transform 0.1s ease-in-out 0s, opacity 0.1s ease-in-out 0s;
+}
+
+%transition-mh {
+  transition: max-height 0.1s ease-in-out 0s;
+}
+
+%transition-bg-c {
+  transition: background-color 0.2s ease-in-out 0.1s;
+}
+
+%transition-bg-i {
+  transition: background-image 0.2s ease-in-out 0.1s;
+}
+
+%transition-b {
+  transition: border 0.2s ease-in-out 0.1s;
+}
+
+%transition-w {
+  transition: width 0.1s ease-in-out 0s;
+}
+
+%dis-link {
+  pointer-events: none;
+  cursor: default;
+}
+
+%btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+%list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+%visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+%text-decoration-none {
+  text-decoration: none;
+}
+
+%bg-center-contain {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+%bg-center-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+%shadow-bg {
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 5px rgba(48, 48, 48, 0.25);
+  border-radius: 5px;
+}

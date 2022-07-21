@@ -1,0 +1,10 @@
+{
+  "bgimage": {
+    "scope": "scss",
+    "prefix": "bg-i",
+    "body": [
+      "background-image: url(\"@img\");"
+    ],
+    "description": "Snippet for use background-image"
+  }
+}

@@ -1,0 +1,44 @@
+:root {
+  // indents
+  --indent-large: 24px;
+  --indent-medium: 16px;
+  --indent-small: 8px;
+
+  @include small-tablet {
+    --indent-large: 16px;
+    --indent-medium: 12px;
+    --indent-small: 8px;
+  }
+
+  // base
+  --font-family: "Inter", sans-serif;
+  --header-width: 1146px;
+  --content-width: 762px;
+  --container-offset: var(--indent-medium);
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-blue: #003ace;
+  --color-red: #fd0001;
+  --color-red-hover: #df0001;
+  --color-light-gray: #f5f5f5;
+  --color-green: #26cf85;
+  --color-purple: #4f2393;
+  --color-baner: #061b4c;
+
+  //table-colors
+  --color-gray: #d4d4d4;
+  --color-even: #f8f8f8;
+  --color-border: #c4c4c4;
+
+  //
+  --color-plus: #f7fff7;
+  --color-minus: #fff7f7;
+
+  // sizes
+  --burger-width: 38px;
+  --burger-height: 26px;
+  --burger-line-height: 3px;
+}
